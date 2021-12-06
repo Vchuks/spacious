@@ -1,38 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
-  text-align: center;
+  margin: auto;
+}
+.navbar-light .navbar-brand {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 72px;
+  color: #121C33;
+
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+text-align: center;
+color: #121C33;
+background: rgba(18, 28, 51, 0.05);
+}
+.nav-link{
+  color: #121C33;
+  opacity: 0.6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link:focus, .nav-link:hover{
+  color:#121C33;
+  opacity: 1;
+}
+.card{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  height: 200px;
+  width: 272px;
+  left: 0px;
+  top: 0px;
+  margin: 10px;
+
+}
+#people {
+  width: 272px;
+  height: 136px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  .card-img-top {
+  width:120px;
+  height: 120px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card .h5, h5 {
+  font-style: SemiBold;
+  font-size: 16px;
+  color: #121C33;
+  line-height: 24px;
+  line-height: 100%;
+}
+.card .h6, h6 {
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 18px;
+  line-height: 100%;
+  Opacity: 60%;
+  color: #121C33;
+}
+.card-display{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+#card-display-title{
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  color: #121C33;
+}
+#card-display-text{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+#card-display-subtitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  opacity: 1;
+}
+.offcanvas-start {
+  top: 0;
+  right: 0;
+  left: auto;
+  width: 400px;
+  
+}
+.offcanvas-backdrop.show {
+  opacity: 0.1;
+}
+.offcanvas-header .btn-close {
+  padding: .5rem .5rem;
+  margin-top: -.5rem;
+  margin-right: -.5rem;
+  margin-bottom: -.5rem;
+}
+.figure{
+  width: 100%;
+}
+.figure-img{
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
